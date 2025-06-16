@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Radio Field</title>
+<link rel="icon" type="image/png" href="SiteIcon.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script src="https://apis.google.com/js/platform.js"></script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-title">
+        <img src="SiteIcon.png" alt="Logo" />
+        <h1>Radio Field</h1>
+      </div>
+      <nav id="dynamic-nav"></nav>
+      <div id="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search the site..."
+          autocomplete="off"
+        />
+        <div id="suggestions"></div>
+      </div>
+    </header>
+    </div>
+    <div class="radio-table-container">
+      <h2>Russia — Military Stations</h2>
+      <table class="radio-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Callsign</th>
+            <th>Frequency</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Buzzer</td>
+            <td>NZhTI</td>
+            <td>4625 kHz</td>
+            <td>Also known as "The Buzzer", mysterious repeating tones and occasional messages</td>
+          </tr>
+          <tr>
+            <td>The Pip</td>
+            <td>JVB1</td>
+            <td>5448 kHz / 3756 kHz</td>
+            <td>Short, repetitive beeps; likely military origin</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+    <div class="footer-content">
+        <p>© <span id="year"></span> Radio Field</p>
+        <div class="social-links">
+        <a href="https://www.youtube.com/@thebuzzerchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon youtube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://discord.gg/tGHZVwdXYw" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon discord">
+            <i class="fab fa-discord"></i>
+        </a>
+        </div>
+    </div>
+    </footer>
+
+  <script src="search.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    async function loadNavigation() {
+      try {
+        const response = await fetch('pagesincontainer.json');
+        if (!response.ok) throw new Error('Ошибка загрузки навигации');
+        const links = await response.json();
+
+        const nav = document.getElementById('dynamic-nav');
+        nav.innerHTML = links.map(link =>
+          `<a href="${link.url}">${link.title}</a>`
+        ).join(' | ');
+
+      } catch (error) {
+        console.error('Ошибка загрузки меню:', error.message);
+        document.getElementById('dynamic-nav').textContent = 'Ошибка загрузки меню';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadNavigation();
+      loadNews();
+    });
+  </script>
+
+</body>
+</html>

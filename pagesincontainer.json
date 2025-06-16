@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Main Page",
+    "url": "index.html"
+  },
+  {
+    "title": "Military Stations",
+    "url": "milstat.html"
+  },
+  {
+    "title": "Number Stations",
+    "url": "numstat.html"
+  },
+  {
+    "title": "News",
+    "url": "newspage.html"
+  }
+]
