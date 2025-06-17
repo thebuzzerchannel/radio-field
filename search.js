@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Military Stations', url: 'milstat.html' },
     { name: 'News', url: 'newspage.html' },
     { name: 'Main Page', url: 'index.html' },
+    { name: 'Shortwave Broadcasts', url: 'shortwavebroadcastassss.html' },
     // Добавляй свои страницы сюда
   ];
   document.addEventListener('DOMContentLoaded', () => {
