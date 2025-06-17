@@ -294,7 +294,7 @@ main h2 {
 .radio-table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 5px 0px; /* <-- горизонтальные и вертикальные отступы */
+  border-spacing: 2px 0px; /* <-- горизонтальные и вертикальные отступы */
   color: #dcdcdc;
 }
 
