@@ -12,7 +12,11 @@
     "url": "numstat.html"
   },
   {
-    "title": "News",
+    "title": "Shortwave Broadcasts",
+    "url": "swbroadcasts.html"
+  },
+  {
+    "title": "News + others",
     "url": "newspage.html"
   }
 ]
