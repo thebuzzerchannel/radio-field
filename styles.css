@@ -1,4 +1,8 @@
 /* Общие настройки */
+*, *::before, *::after { /* Добавляем box-sizing: border-box; для всех элементов */
+  box-sizing: border-box;
+}
+
 body {
   background-color: #121212;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -455,10 +459,14 @@ nav a:hover {
     padding: 10px; /* Уменьшаем общий отступ на мобильных */
   }
 
+  .container { /* Адаптируем контейнер для мобильных */
+    padding: 15px; /* Уменьшаем внутренние отступы контейнера */
+  }
+
   /* Хедер */
   header {
     flex-direction: column; /* Элементы хедера выстраиваются по вертикали */
-    align-items: flex-start; /* Выравнивание по левому краю */
+    align-items: center; /* Центрируем элементы по горизонтали */
     gap: 15px; /* Уменьшаем расстояние между элементами */
   }
 
@@ -498,89 +506,94 @@ nav a:hover {
 
   /* Новости */
   NewsPageElements {
-    padding: 20px; /* Уменьшаем отступы на странице новостей */
-    gap: 20px; /* Уменьшаем расстояние между элементами */
+    padding: 15px; /* Уменьшаем отступы на странице новостей */
+    gap: 15px; /* Уменьшаем расстояние между элементами */
   }
 
   NewsPageElements img {
     float: none; /* Убираем обтекание текстом */
-    width: 80%; /* Изображение занимает большую часть ширины */
-    margin: 20px auto 0; /* Центрируем изображение и добавляем отступы */
+    width: 90%; /* Изображение занимает большую часть ширины */
+    margin: 15px auto 0; /* Центрируем изображение и добавляем отступы */
     display: block; /* Делаем блочным элементом для центрирования */
   }
 
   NewsPageElements h2 {
-    font-size: 22px; /* Уменьшаем размер заголовков новостей */
+    font-size: 20px; /* Уменьшаем размер заголовков новостей */
     padding-left: 8px; /* Уменьшаем отступ слева */
   }
 
   NewsPageElements p {
-    font-size: 16px; /* Уменьшаем размер шрифта абзацев */
+    font-size: 15px; /* Уменьшаем размер шрифта абзацев */
   }
 
   main h2 {
-    font-size: 1.8rem; /* Уменьшаем размер заголовков на главной */
-    margin-bottom: 20px;
+    font-size: 1.6rem; /* Уменьшаем размер заголовков на главной */
+    margin-bottom: 15px;
   }
 
   .mainpagetext {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
   }
 
   .mainpagetext2 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
   }
 
   #news-list {
-    padding: 0 10px; /* Добавляем горизонтальный отступ для списка новостей */
+    padding: 0 5px; /* Уменьшаем горизонтальный отступ для списка новостей */
   }
 
   .news-item {
-    padding: 15px; /* Уменьшаем отступы внутри новости */
+    padding: 10px; /* Уменьшаем отступы внутри новости */
   }
 
   .news-item h3 {
-    font-size: 1.4rem; /* Уменьшаем размер заголовков новостных статей */
+    font-size: 1.3rem; /* Уменьшаем размер заголовков новостных статей */
   }
 
   .news-item time {
-    font-size: 0.8rem; /* Уменьшаем размер шрифта времени */
+    font-size: 0.75rem; /* Уменьшаем размер шрифта времени */
   }
 
   .news-item p {
-    font-size: 1rem; /* Уменьшаем размер шрифта текста новости */
+    font-size: 0.9rem; /* Уменьшаем размер шрифта текста новости */
   }
 
   /* Радио-таблица */
   .radio-table-container {
-    width: 95vw; /* Занимает почти всю ширину экрана */
-    padding: 15px; /* Уменьшаем отступы */
-    margin: 20px auto; /* Меньше отступ сверху и снизу */
+    width: 98vw; /* Занимает почти всю ширину экрана */
+    padding: 10px; /* Уменьшаем отступы */
+    margin: 15px auto; /* Меньше отступ сверху и снизу */
     height: auto; /* Высота подстраивается под содержимое */
     overflow-x: auto; /* Позволяем горизонтальную прокрутку для таблицы, если она слишком широкая */
   }
 
   .radio-table-container h2 {
-    font-size: 1.8rem; /* Уменьшаем размер заголовка таблицы */
-    margin-bottom: 20px;
+    font-size: 1.6rem; /* Уменьшаем размер заголовка таблицы */
+    margin-bottom: 15px;
+  }
+
+  .radio-table {
+    border-spacing: 2px 0px; /* Уменьшаем горизонтальные отступы между ячейками */
   }
 
   .radio-table th,
   .radio-table td {
-    padding: 10px; /* Уменьшаем отступы в ячейках таблицы */
-    font-size: 0.9rem; /* Уменьшаем размер шрифта в таблице */
+    padding: 8px; /* Уменьшаем отступы в ячейках таблицы */
+    font-size: 0.8rem; /* Уменьшаем размер шрифта в таблице */
   }
 
   .radio-table th {
-    border-radius: 8px 8px 0 0; /* Скругляем углы заголовков таблицы */
+    border-radius: 6px 6px 0 0; /* Скругляем углы заголовков таблицы */
   }
 
   /* Футер */
   footer {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 0.8rem;
   }
 }
 
@@ -590,21 +603,53 @@ nav a:hover {
     padding: 5px;
   }
 
+  .container {
+    padding: 10px;
+  }
+
   header h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .mainpagetext {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .mainpagetext2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .radio-table th,
   .radio-table td {
-    padding: 8px;
-    font-size: 0.8rem;
+    padding: 6px;
+    font-size: 0.7rem;
+  }
+  
+  .radio-table {
+    border-spacing: 0px; /* Убираем отступы между ячейками на самых маленьких экранах */
+  }
+
+  NewsPageElements h2 {
+    font-size: 18px;
+  }
+
+  NewsPageElements p {
+    font-size: 14px;
+  }
+
+  .news-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .news-item p {
+    font-size: 0.85rem;
+  }
+
+  .radio-table-container h2 {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
   }
 }
