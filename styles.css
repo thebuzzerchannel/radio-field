@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
 }
 
+/* Общие элементы страницы новостей */
 NewsPageElements {
   width: 100%;
   max-width: 800px;
@@ -446,4 +447,164 @@ nav a:hover {
   background-color: #272727;
   color: #ffffff;
   cursor: pointer;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Уменьшаем общий отступ на мобильных */
+  }
+
+  /* Хедер */
+  header {
+    flex-direction: column; /* Элементы хедера выстраиваются по вертикали */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    gap: 15px; /* Уменьшаем расстояние между элементами */
+  }
+
+  .logo-title {
+    width: 100%; /* Занимает всю ширину */
+    justify-content: center; /* Центрируем логотип и заголовок */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Уменьшаем размер заголовка */
+    text-align: center;
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column; /* Навигационные ссылки выстраиваются по вертикали */
+    align-items: center; /* Центрируем ссылки */
+    width: 100%;
+    gap: 10px; /* Уменьшаем расстояние между ссылками */
+  }
+
+  nav a {
+    font-size: 1rem; /* Уменьшаем размер шрифта ссылок */
+    padding: 5px 0; /* Добавляем отступы для удобства нажатия */
+  }
+
+  #search-container {
+    max-width: 100%; /* Поиск занимает всю ширину */
+    width: 100%;
+    margin-top: 10px; /* Отступ сверху */
+  }
+
+  #search-input {
+    font-size: 14px; /* Уменьшаем размер шрифта в поле поиска */
+    padding: 8px 12px; /* Уменьшаем отступы */
+  }
+
+  /* Новости */
+  NewsPageElements {
+    padding: 20px; /* Уменьшаем отступы на странице новостей */
+    gap: 20px; /* Уменьшаем расстояние между элементами */
+  }
+
+  NewsPageElements img {
+    float: none; /* Убираем обтекание текстом */
+    width: 80%; /* Изображение занимает большую часть ширины */
+    margin: 20px auto 0; /* Центрируем изображение и добавляем отступы */
+    display: block; /* Делаем блочным элементом для центрирования */
+  }
+
+  NewsPageElements h2 {
+    font-size: 22px; /* Уменьшаем размер заголовков новостей */
+    padding-left: 8px; /* Уменьшаем отступ слева */
+  }
+
+  NewsPageElements p {
+    font-size: 16px; /* Уменьшаем размер шрифта абзацев */
+  }
+
+  main h2 {
+    font-size: 1.8rem; /* Уменьшаем размер заголовков на главной */
+    margin-bottom: 20px;
+  }
+
+  .mainpagetext {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .mainpagetext2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  #news-list {
+    padding: 0 10px; /* Добавляем горизонтальный отступ для списка новостей */
+  }
+
+  .news-item {
+    padding: 15px; /* Уменьшаем отступы внутри новости */
+  }
+
+  .news-item h3 {
+    font-size: 1.4rem; /* Уменьшаем размер заголовков новостных статей */
+  }
+
+  .news-item time {
+    font-size: 0.8rem; /* Уменьшаем размер шрифта времени */
+  }
+
+  .news-item p {
+    font-size: 1rem; /* Уменьшаем размер шрифта текста новости */
+  }
+
+  /* Радио-таблица */
+  .radio-table-container {
+    width: 95vw; /* Занимает почти всю ширину экрана */
+    padding: 15px; /* Уменьшаем отступы */
+    margin: 20px auto; /* Меньше отступ сверху и снизу */
+    height: auto; /* Высота подстраивается под содержимое */
+    overflow-x: auto; /* Позволяем горизонтальную прокрутку для таблицы, если она слишком широкая */
+  }
+
+  .radio-table-container h2 {
+    font-size: 1.8rem; /* Уменьшаем размер заголовка таблицы */
+    margin-bottom: 20px;
+  }
+
+  .radio-table th,
+  .radio-table td {
+    padding: 10px; /* Уменьшаем отступы в ячейках таблицы */
+    font-size: 0.9rem; /* Уменьшаем размер шрифта в таблице */
+  }
+
+  .radio-table th {
+    border-radius: 8px 8px 0 0; /* Скругляем углы заголовков таблицы */
+  }
+
+  /* Футер */
+  footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Дополнительные медиа-запросы для очень маленьких экранов (смартфоны) */
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .mainpagetext {
+    font-size: 1.5rem;
+  }
+
+  .mainpagetext2 {
+    font-size: 1rem;
+  }
+
+  .radio-table th,
+  .radio-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
 }
