@@ -65,6 +65,50 @@ html, body {
   border-radius: 10px;
 }
 
+.milstat-section {
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.milstat-section .milstatpagetext {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.milstat-section .milstatpagetext2 {
+  position: relative;
+  top: 20px;
+  width: fit-content;
+  text-align: left;
+  font-size: 1.4em;
+  color: #ffffff;
+  line-height: 1.2em;
+  left: 0; /* убираем смещение по умолчанию */
+  margin-left: 0; /* добавим управление отступами через margin */
+}
+
+/* ПК (десктопы) */
+@media (min-width: 768px) {
+  .milstat-section .milstatpagetext2 {
+    font-size: 1.4em;
+    margin-left: -3em; /* вместо left используем margin */
+  }
+}
+
+/* Мобильные устройства */
+@media (max-width: 767px) {
+  .milstat-section .milstatpagetext2 {
+    font-size: 1.1em; /* немного меньше шрифт */
+    margin-left: 0;
+    line-height: 1.4em; /* читаемость на мобильных */
+  }
+}
+
+
 .news-item {
   border-bottom: 1px solid #333;
   padding: 20px 0;
