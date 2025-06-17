@@ -276,8 +276,9 @@ main h2 {
     0 8px 24px rgba(0, 0, 0, 0.6),
     inset 0 0 10px rgba(255, 255, 255, 0.05);
   color: #e0e0e0;
-  height: 1000px;
-  overflow-y: auto;
+  /* Удаляем фиксированную высоту и прокрутку */
+  /* height: 1000px; */
+  /* overflow-y: auto; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s ease;
 }
@@ -567,7 +568,7 @@ nav a:hover {
     padding: 10px; /* Уменьшаем отступы */
     margin: 15px auto; /* Меньше отступ сверху и снизу */
     height: auto; /* Высота подстраивается под содержимое */
-    overflow-x: auto; /* Позволяем горизонтальную прокрутку для таблицы, если она слишком широкая */
+    /* overflow-x: auto;  Если таблица все еще слишком широкая, можно вернуть, но сначала пробуем без него */
   }
 
   .radio-table-container h2 {
