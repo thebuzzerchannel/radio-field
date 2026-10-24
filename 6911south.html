@@ -1,79 +1,180 @@
-<main>
-  <article>  
-    <h2>Berkut24</h2>   
-    
-    <!-- Usuniętoklasy row i col-sm-8, żeby tabela była szeroka -->
-    <div style="margin-top: 20px;">
-      <table class="table table-bordered radio-table" style="max-width: 100%;">
-        <tbody>
-          <tr>
-            <td style="white-space: nowrap; width: 20%;">Enigma ID</td>
-            <td>None</td>     
-          </tr>  
-          <tr>
-            <td style="white-space: nowrap;">Name</td>
-            <td>Berkut24 / Беркут24</td>     
-          </tr>  
-          <tr>
-            <td style="white-space: nowrap;">Frequencies</td>
-            <td>5210 kHz daytime; 3870 kHz nighttime</td>
-          </tr>
-          <tr>
-            <td style="white-space: nowrap;">Status</td>
-            <td>Active</td>     
-          </tr>
-          <tr>
-            <td style="white-space: nowrap;">Voice</td>
-            <td>Male, live</td>     
-          </tr>
-          <tr>
-            <td style="white-space: nowrap;">Emission mode</td>
-            <td>J3E (USB)</td>     
-          </tr>
-          <tr>
-            <td style="white-space: nowrap;">Location</td>
-            <td>
-              Russia 
-              <p style="display:inline;">
-                <img src='/media/93849/800px-flag_of_russia.svg.png' alt='Russian' height="11" width="16"/>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td style="white-space: nowrap; vertical-align: top;">Activity pages</td>
-            <td class="activity-pages">
-              <script type="text/javascript">
-                function toggleDisplay(el) {
-                  el.style.display = el.style.display != 'none' ? 'none' : null;
-                }
-              </script>
-              <ul>
-                <li class="navlist-expandable navlist-tagged-">
-                  <span><a onclick="toggleDisplay(this.parentNode.nextSibling); return false;" href="#">2024</a></span>
-                  <ul style="display:none;">
-                    <li class="navlist-tagged-"><span><a href="#">July</a></span></li>
-                  </ul>
-                  <br />
-                </li>
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berkut24 › Radio Field</title>
+    <link rel="icon" type="image/png" href="SiteIcon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:regular,bold">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      
+      <header>
+        <div class="text-center" style="padding: 20px 0;">
+          <a href="/"><img src="SiteIcon.png" alt="Radio Field" width="80" style="display: inline-block; vertical-align: middle; margin-right: 10px;"></a>
+          <h1 style="display: inline-block; vertical-align: middle; margin: 0; color: #fff; font-family: 'Lato', sans-serif; font-weight: bold;">Radio Field</h1>
+        </div>
+  
+        <nav class="navbar navbar-inverse navbar-priyom" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="visible-xs navbar-brand" href="/">Radio Field</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav" id="dynamic-nav">
+                <!-- Dynamic navigation loaded via script -->
               </ul>
-            </td>
-          </tr>
-        </tbody>   
-      </table>
-    </div>    
+            </div>
+          </div>
+        </nav>
+      </header>
+            
+      <div class="main container">
+        <nav>
+          <ol class="breadcrumb" style="background: transparent; padding-left: 0;">
+            <li><a href="/">Radio Field</a></li>
+            <li><a href="/military-stations">Military Stations</a></li>
+            <li><a href="/military-stations/russia">Russia</a></li>
+            <li><span>Berkut24</span></li>
+          </ol>
+        </nav>
+              
+        <main>
+          <article>  
+            <h2>Berkut24</h2>   
+            
+            <!-- Używamy col-xs-12, żeby tabela zajmowała całą szerokość, zachowując style tabeli -->
+            <section class="row">
+              <div class="col-xs-12">
+                <table class="table table-bordered radio-table" style="width: 100%;">
+                  <tbody>
+                    <tr>
+                      <td style="white-space: nowrap; width: 20%;">Enigma ID</td>
+                      <td>None</td>     
+                    </tr>  
+                    <tr>
+                      <td style="white-space: nowrap;">Name</td>
+                      <td>Berkut24 / Беркут24</td>     
+                    </tr>  
+                    <tr>
+                      <td style="white-space: nowrap;">Frequencies</td>
+                      <td>5210 kHz daytime; 3870 kHz nighttime</td>
+                    </tr>
+                    <tr>
+                      <td style="white-space: nowrap;">Status</td>
+                      <td>Active</td>     
+                    </tr>
+                    <tr>
+                      <td style="white-space: nowrap;">Voice</td>
+                      <td>Male, live</td>     
+                    </tr>
+                    <tr>
+                      <td style="white-space: nowrap;">Emission mode</td>
+                      <td>J3E (USB)</td>     
+                    </tr>
+                    <tr>
+                      <td style="white-space: nowrap;">Location</td>
+                      <td>
+                        Russia 
+                        <p style="display:inline;">
+                          <img src='/media/93849/800px-flag_of_russia.svg.png' alt='Russian' height="11" width="16"/>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="white-space: nowrap; vertical-align: top;">Activity pages</td>
+                      <td class="activity-pages">
+                        <script type="text/javascript">
+                          function toggleDisplay(el) {
+                            el.style.display = el.style.display != 'none' ? 'none' : null;
+                          }
+                        </script>
+                        <ul>
+                          <li class="navlist-expandable navlist-tagged-">
+                            <span><a onclick="toggleDisplay(this.parentNode.nextSibling); return false;" href="#">2024</a></span>
+                            <ul style="display:none;">
+                              <li class="navlist-tagged-"><span><a href="#">July</a></span></li>
+                            </ul>
+                            <br />
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>   
+                </table>
+              </div>
+            </section>    
+            
+            <section style="margin-top: 20px;">  
+              <p>This network was first heard in 2009, the first signal was caught in 2013. Not much known about this station, but presumably it's located somewhere in Southern Military District.</p>
+
+              <p>Signal format on this station changed a lot of times:</p>
+
+              <ul>
+                <li>In 2013: XXXX Word XXXX</li>
+                <li>In 2023: XXXXX Word XXXXX</li>
+                <li>From 2024: XXXXX Word XXXX</li>
+              </ul>
+
+              <p>Where X is any digit.</p>
+            </section>
+          </article>
+        </main>
+      </div> 
+      
+      <div class="push"></div>
+    </div>
     
-    <section style="margin-top: 20px;">  
-      <p>This network was first heard in 2009, the first signal was caught in 2013. Not much known about this station, but presumably it's located somewhere in Southern Military District.</p>
+    <footer class="footer" style="padding: 20px 0; border-top: 1px solid #333; margin-top: 40px;">
+      <div class="container text-center">
+        <p>© <span id="year"></span> Radio Field</p>
+        <div class="social-links" style="margin-top: 10px;">
+          <a href="https://www.youtube.com/@thebuzzerchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon youtube" style="margin: 0 10px; font-size: 20px; color: #fff;">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://discord.gg/tGHZVwdXYw" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon discord" style="margin: 0 10px; font-size: 20px; color: #fff;">
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
-      <p>Signal format on this station changed a lot of times:</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="search.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      async function loadNavigation() {
+        try {
+          const response = await fetch('pagesincontainer.json');
+          if (!response.ok) throw new Error('Błąd ładowania nawigacji');
+          const links = await response.json();
 
-      <ul>
-        <li>In 2013: XXXX Word XXXX</li>
-        <li>In 2023: XXXXX Word XXXXX</li>
-        <li>From 2024: XXXXX Word XXXX</li>
-      </ul>
+          const nav = document.getElementById('dynamic-nav');
+          nav.innerHTML = links.map(link =>
+            `<li><a href="${link.url}"><span>${link.title}</span></a></li>`
+          ).join('');
 
-      <p>Where X is any digit.</p>
-    </section>
-  </article>
-</main>
+        } catch (error) {
+          console.error('Błąd menu:', error.message);
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        loadNavigation();
+      });
+    </script>
+  </body>
+</html>
