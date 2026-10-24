@@ -12,140 +12,127 @@
   </head>
   
   <body>
-    <div class="wrapper">
-      
+    <div class="container">
       <header>
-        <div class="text-center" style="padding: 20px 0;">
-          <a href="/"><img src="SiteIcon.png" alt="Radio Field" width="80" style="display: inline-block; vertical-align: middle; margin-right: 10px;"></a>
-          <h1 style="display: inline-block; vertical-align: middle; margin: 0; color: #fff; font-family: 'Lato', sans-serif; font-weight: bold;">Radio Field</h1>
+        <div class="logo-title">
+          <img src="SiteIcon.png" alt="Logo" />
+          <h1>Radio Field</h1>
         </div>
-  
-        <nav class="navbar navbar-inverse navbar-priyom" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="visible-xs navbar-brand" href="/">Radio Field</a>
-            </div>
-
-            <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav" id="dynamic-nav">
-                <!-- Dynamic navigation loaded via script -->
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <nav id="dynamic-nav"></nav>
+        <div id="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search the site..."
+            autocomplete="off"
+          />
+          <div id="suggestions"></div>
+        </div>
       </header>
-            
-      <div class="main container">
-        <nav>
-          <ol class="breadcrumb" style="background: transparent; padding-left: 0;">
-            <li><a href="/">Radio Field</a></li>
-            <li><a href="/military-stations">Military Stations</a></li>
-            <li><a href="/military-stations/russia">Russia</a></li>
-            <li><span>Berkut24</span></li>
-          </ol>
-        </nav>
-              
-        <main>
-          <article>  
-            <h2>Berkut24</h2>   
-            
-            <section class="row">
-              <div class="col-sm-8">
-                <table class="table table-bordered" style="background-color: #161616; border-color: #333; color: #fff;">
-                  <tbody>
-                    <tr>
-                      <td style="white-space: nowrap; width: 30%; border-color: #333;">Enigma ID</td>
-                      <td style="border-color: #333;">None</td>     
-                    </tr>  
-                    <tr>
-                      <td style="border-color: #333;">Name</td>
-                      <td style="border-color: #333;">Berkut24 / Беркут24</td>     
-                    </tr>  
-                    <tr>
-                      <td style="border-color: #333;">Frequencies</td>
-                      <td style="border-color: #333;">5210 kHz daytime; 3870 kHz nighttime</td>
-                    </tr>
-                    <tr>
-                      <td style="border-color: #333;">Status</td>
-                      <td style="border-color: #333;">Active</td>     
-                    </tr>
-                    <tr>
-                      <td style="border-color: #333;">Voice</td>
-                      <td style="border-color: #333;">Male, live</td>     
-                    </tr>
-                    <tr>
-                      <td style="border-color: #333;">Emission mode</td>
-                      <td style="border-color: #333;">J3E (USB)</td>     
-                    </tr>
-                    <tr>
-                      <td style="border-color: #333;">Location</td>
-                      <td style="border-color: #333;">
-                        Russia 
-                        <p style="display:inline;">
-                          <img src='/media/93849/800px-flag_of_russia.svg.png' alt='Russian' height="11" width="16"/>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="border-color: #333; vertical-align: top;">Activity pages</td>
-                      <td class="activity-pages" style="border-color: #333;">
-                        <script type="text/javascript">
-                          function toggleDisplay(el) {
-                            el.style.display = el.style.display != 'none' ? 'none' : null;
-                          }
-                        </script>
-                        <ul style="padding-left: 15px; margin-bottom: 0;">
-                          <li class="navlist-expandable navlist-tagged-">
-                            <span><a onclick="toggleDisplay(this.parentNode.nextSibling); return false;" href="#" style="color: #4ccae0;">2024</a></span>
-                            <ul style="display:none; padding-left: 15px;">
-                              <li class="navlist-tagged-"><span><a href="#" style="color: #4ccae0;">July</a></span></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>   
-                </table>
-              </div>
-              <div class="col-sm-4 station-sample">
-                <!-- Prawa kolumna na odtwarzacz / próbki audio -->
-              </div>
-            </section>    
-            
-            <section style="margin-top: 20px;">  
-              <p>This network was first heard in 2009, the first signal was caught in 2013. Not much known about this station, but presumably it's located somewhere in Southern Military District.</p>
-
-              <p>Signal format on this station changed a lot of times:</p>
-
-              <ul>
-                <li>In 2013: XXXX Word XXXX</li>
-                <li>In 2023: XXXXX Word XXXXX</li>
-                <li>From 2024: XXXXX Word XXXX</li>
-              </ul>
-
-              <p>Where X is any digit.</p>
-            </section>
-          </article>
-        </main>
-      </div> 
-      
-      <div class="push"></div>
     </div>
+            
+    <div class="main container" style="margin-top: 20px;">
+      <nav>
+        <ol class="breadcrumb" style="background: transparent; padding-left: 0;">
+          <li><a href="/">Radio Field</a></li>
+          <li><a href="/military-stations">Military Stations</a></li>
+          <li><a href="/military-stations/russia">Russia</a></li>
+          <li><span>Berkut24</span></li>
+        </ol>
+      </nav>
+            
+      <main>
+        <article>  
+          <h2>Berkut24</h2>   
+          
+          <section class="row">
+            <div class="col-sm-8">
+              <table class="table table-bordered" style="background-color: #161616; border-color: #333; color: #fff;">
+                <tbody>
+                  <tr>
+                    <td style="white-space: nowrap; width: 30%; border-color: #333;">Enigma ID</td>
+                    <td style="border-color: #333;">None</td>     
+                  </tr>  
+                  <tr>
+                    <td style="border-color: #333;">Name</td>
+                    <td style="border-color: #333;">Berkut24 / Беркут24</td>     
+                  </tr>  
+                  <tr>
+                    <td style="border-color: #333;">Frequencies</td>
+                    <td style="border-color: #333;">5210 kHz daytime; 3870 kHz nighttime</td>
+                  </tr>
+                  <tr>
+                    <td style="border-color: #333;">Status</td>
+                    <td style="border-color: #333;">Active</td>     
+                  </tr>
+                  <tr>
+                    <td style="border-color: #333;">Voice</td>
+                    <td style="border-color: #333;">Male, live</td>     
+                  </tr>
+                  <tr>
+                    <td style="border-color: #333;">Emission mode</td>
+                    <td style="border-color: #333;">J3E (USB)</td>     
+                  </tr>
+                  <tr>
+                    <td style="border-color: #333;">Location</td>
+                    <td style="border-color: #333;">
+                      Russia 
+                      <p style="display:inline;">
+                        <img src='/media/93849/800px-flag_of_russia.svg.png' alt='Russian' height="11" width="16"/>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-color: #333; vertical-align: top;">Activity pages</td>
+                    <td class="activity-pages" style="border-color: #333;">
+                      <script type="text/javascript">
+                        function toggleDisplay(el) {
+                          el.style.display = el.style.display != 'none' ? 'none' : null;
+                        }
+                      </script>
+                      <ul style="padding-left: 15px; margin-bottom: 0;">
+                        <li class="navlist-expandable navlist-tagged-">
+                          <span><a onclick="toggleDisplay(this.parentNode.nextSibling); return false;" href="#" style="color: #4ccae0;">2024</a></span>
+                          <ul style="display:none; padding-left: 15px;">
+                            <li class="navlist-tagged-"><span><a href="#" style="color: #4ccae0;">July</a></span></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>   
+              </table>
+            </div>
+            <div class="col-sm-4 station-sample">
+              <!-- Prawa kolumna na odtwarzacz / próbki audio -->
+            </div>
+          </section>    
+          
+          <section style="margin-top: 20px;">  
+            <p>This network was first heard in 2009, the first signal was caught in 2013. Not much known about this station, but presumably it's located somewhere in Southern Military District.</p>
+
+            <p>Signal format on this station changed a lot of times:</p>
+
+            <ul>
+              <li>In 2013: XXXX Word XXXX</li>
+              <li>In 2023: XXXXX Word XXXXX</li>
+              <li>From 2024: XXXXX Word XXXX</li>
+            </ul>
+
+            <p>Where X is any digit.</p>
+          </section>
+        </article>
+      </main>
+    </div> 
     
-    <footer class="footer" style="padding: 20px 0; border-top: 1px solid #333; margin-top: 40px;">
-      <div class="container text-center">
+    <footer>
+      <div class="footer-content">
         <p>© <span id="year"></span> Radio Field</p>
-        <div class="social-links" style="margin-top: 10px;">
-          <a href="https://www.youtube.com/@thebuzzerchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon youtube" style="margin: 0 10px; font-size: 20px; color: #fff;">
+        <div class="social-links">
+          <a href="https://www.youtube.com/@thebuzzerchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon youtube">
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="https://discord.gg/tGHZVwdXYw" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon discord" style="margin: 0 10px; font-size: 20px; color: #fff;">
+          <a href="https://discord.gg/tGHZVwdXYw" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon discord">
             <i class="fab fa-discord"></i>
           </a>
         </div>
@@ -165,11 +152,12 @@
 
           const nav = document.getElementById('dynamic-nav');
           nav.innerHTML = links.map(link =>
-            `<li><a href="${link.url}"><span>${link.title}</span></a></li>`
-          ).join('');
+            `<a href="${link.url}">${link.title}</a>`
+          ).join(' | ');
 
         } catch (error) {
           console.error('Błąd menu:', error.message);
+          document.getElementById('dynamic-nav').textContent = 'Błąd ładowania menu';
         }
       }
 
