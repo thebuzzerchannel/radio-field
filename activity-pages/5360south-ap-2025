@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2026 Logs › Radio Field</title>
+<link rel="icon" type="image/png" href="SiteIcon.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* Dodatkowe style dla tabeli logów w stylu Priyom */
+  .log-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #161616;
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .log-table th, .log-table td {
+    border: 1px solid #333;
+    padding: 10px 12px;
+    vertical-align: top;
+  }
+  .log-table th {
+    background-color: #1f1f1f;
+    color: #fff;
+    font-weight: bold;
+  }
+  .log-table tr:hover {
+    background-color: #1c1c1c;
+  }
+  .log-thanks {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-title">
+        <img src="SiteIcon.png" alt="Logo" />
+        <h1>Radio Field</h1>
+      </div>
+      <nav id="dynamic-nav"></nav>
+      <div id="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search the site..."
+          autocomplete="off"
+        />
+        <div id="suggestions"></div>
+      </div>
+    </header>
+  </div>
+
+  <div class="radio-table-container" style="margin-top: 20px; padding: 0 15px;">
+    <!-- Okruski nawigacji (Breadcrumbs) -->
+    <nav style="margin-bottom: 20px;">
+      <ol class="breadcrumb" style="background: transparent; padding-left: 0; list-style: none; display: flex; gap: 5px; color: #aaa;">
+        <li><a href="/" style="color: #4ccae0; text-decoration: none;">Radio Field</a></li>
+        <li>/</li>
+        <li><a href="/military-stations" style="color: #4ccae0; text-decoration: none;">Military Stations</a></li>
+        <li>/</li>
+        <li><a href="/military-stations/russia" style="color: #4ccae0; text-decoration: none;">Russia</a></li>
+        <li>/</li>
+        <li><a href="/military-stations/russia/fgkt" style="color: #4ccae0; text-decoration: none;">FGKT</a></li>
+        <li>/</li>
+        <li style="color: #fff;">2026</li>
+      </ol>
+    </nav>
+
+    <main>
+      <article>
+        <section class="milstat-section">
+          <h2 class="milstatpagetext" style="color: #2ecc71; margin-bottom: 5px;">2026</h2>
+        </section>
+
+        <!-- Podziękowania za logi -->
+        <div class="log-thanks">
+          Huge thanks for logs to: SwRR, Neptunefshcat, 2460, The Buzzer Channel, itz.kkursantov, taNIKRIO, girlychu, michaelnxldstan, SW, null
+        </div>
+
+        <!-- Tabela aktywności / rejestr logów -->
+        <div style="overflow-x: auto;">
+          <table class="log-table">
+            <thead>
+              <tr>
+                <th style="width: 15%;">Date / Time (UTC)</th>
+                <th style="width: 12%;">Frequency and Modulation</th>
+                <th style="width: 12%;">Callsign(s)</th>
+                <th style="width: 61%;">Key Group / Latin transcript / Cyrillic transcript / Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>25.10.2026 17:45</td>
+                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
+                <td>FGKT / ФГКТ</td>
+                <td>
+                  <div style="margin-bottom: 5px;"><strong>90075</strong> ZAMYeNYaYuShchIJ 7012 9775</div>
+                  <div style="color: #aaa; margin-bottom: 5px;">ЗАМЕНЯЮЩИЙ 7012 9775</div>
+                  <div style="font-size: 12px; color: #7cc576;">Caught by SwRR.</div>
+                </td>
+              </tr>
+              <tr>
+                <td>24.10.2026 17:45</td>
+                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
+                <td>FGKT / ФГКТ</td>
+                <td>
+                  <div style="margin-bottom: 5px;"><strong>86356</strong> LUCHOSKOT 6472 6079</div>
+                  <div style="color: #aaa; margin-bottom: 5px;">ЛУЧОСКОТ 6472 6079</div>
+                </td>
+              </tr>
+              <tr>
+                <td>21.10.2026 17:45</td>
+                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
+                <td>FGKT / ФГКТ</td>
+                <td>
+                  <div style="color: #888; font-style: italic;">Either no transmission or skipped.</div>
+                </td>
+              </tr>
+              <tr>
+                <td>19.10.2026 17:45</td>
+                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
+                <td>FGKT / ФГКТ</td>
+                <td>
+                  <div style="color: #888; font-style: italic;">No message was transmitted.</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>© <span id="year"></span> Radio Field</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@thebuzzerchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://discord.gg/tGHZVwdXYw" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon discord">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="search.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    async function loadNavigation() {
+      try {
+        const response = await fetch('pagesincontainer.json');
+        if (!response.ok) throw new Error('Ошибка загрузки навигации');
+        const links = await response.json();
+
+        const nav = document.getElementById('dynamic-nav');
+        nav.innerHTML = links.map(link =>
+          `<a href="${link.url}">${link.title}</a>`
+        ).join(' | ');
+
+      } catch (error) {
+        console.error('Ошибка загрузки меню:', error.message);
+        document.getElementById('dynamic-nav').textContent = 'Ошибка загрузки меню';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadNavigation();
+      if (typeof loadNews === 'function') loadNews();
+    });
+  </script>
+</body>
+</html>
