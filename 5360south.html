@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6911 Moscow Musical Network (ceased) › Radio Field</title>
+<link rel="icon" type="image/png" href="SiteIcon.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* Style pomocnicze dla układu dwukolumnowego i miejsca na zdjęcie */
+  .station-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .station-table-col {
+    flex: 2;
+    min-width: 300px;
+  }
+  .station-image-col {
+    flex: 1;
+    min-width: 250px;
+  }
+  .station-image-box {
+    background-color: #161616;
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .station-image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-title">
+        <img src="SiteIcon.png" alt="Logo" />
+        <h1>Radio Field</h1>
+      </div>
+      <nav id="dynamic-nav"></nav>
+      <div id="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search the site..."
+          autocomplete="off"
+        />
+        <div id="suggestions"></div>
+      </div>
+    </header>
+  </div>
+
+  <div class="radio-table-container" style="margin-top: 20px; padding: 0 15px;">
+    <!-- Okruski nawigacji (Breadcrumbs) -->
+    <nav style="margin-bottom: 20px;">
+      <ol class="breadcrumb" style="background: transparent; padding-left: 0; list-style: none; display: flex; gap: 5px; color: #aaa;">
+        <li><a href="/radio-field/index.html" style="color: #4ccae0; text-decoration: none;">Radio Field</a></li>
+        <li>/</li>
+        <li><a href="/radio-field/milstat.html" style="color: #4ccae0; text-decoration: none;">Military Stations</a></li>
+        <li>/</li>
+        <li><a href="/radio-field/russiamilstat.html" style="color: #4ccae0; text-decoration: none;">Russia</a></li>
+        <li>/</li>
+        <li style="color: #fff;">6911 Moscow Musical Network (ceased)</li>
+      </ol>
+    </nav>
+
+    <main>
+      <article>
+        <section class="milstat-section">
+          <h2 class="milstatpagetext" style="color: #2ecc71;">6911 Moscow Musical Network (ceased)</h2>
+        </section>
+
+        <!-- Układ dwukolumnowy: Tabela po lewej, Zdjęcie/Próbka po prawej -->
+        <div class="station-layout">
+          
+          <!-- Lewa kolumna: Tabela właściwości -->
+          <div class="station-table-col">
+            <table class="radio-table" style="width: 100%;">
+              <tbody>
+                <tr>
+                  <td style="white-space: nowrap; font-weight: bold;">Name</td>
+                  <td>6911 Moscow Musical Network (ceased)</td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap; font-weight: bold;">Frequencies</td>
+                  <td>5287, 5362/5363, 6911, 7032, 8514, 8568, 10714, 11609</td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap; font-weight: bold;">Status</td>
+                  <td>Inactive</td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap; font-weight: bold;">Voice</td>
+                  <td>Only twice in 2025. Overall Data/FSK/CIS/Music(to 2025)</td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap; font-weight: bold;">Emission mode</td>
+                  <td>J3E (USB)</td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap; font-weight: bold;">Location</td>
+                  <td>
+                    Below Moscow, suspected Kolomna 
+                    <p style="display:inline; margin-left: 5px;">
+                      <img src='images\800px-flag_of_russia.png' alt='Russian' height="11" width="16"/>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="vertical-align: top;">
+                  <td style="white-space: nowrap; font-weight: bold; padding-top: 10px;">Activity pages</td>
+                  <td class="activity-pages" style="padding-top: 10px; display: flex; flex-direction: column; gap: 5px;">
+                    <a href="https://www.youtube.com/watch?v=WBmaMS_W7N0&t=2193s" target="_blank" style="color: #4ccae0; text-decoration: none;">2024</a>
+                    <a href="LINK_DO_2025" target="_blank" style="color: #4ccae0; text-decoration: none;">2025</a>
+                    <a href="LINK_DO_2026" target="_blank" style="color: #4ccae0; text-decoration: none;">2026</a>
+                  </td>
+                </tr>
+              </tbody>   
+            </table>
+          </div>
+
+          <!-- Prawa kolumna: Miejsce na zdjęcie / wykres waterfall -->
+          <div class="station-image-col">
+            <div class="station-image-box">
+              <img src="images/6911-crystal-clear.png" alt="Station waterfall/sample" style="height: 300px; width: 100%; object-fit: cover; object-position: center;" />
+              <p style="color: #888; font-size: 12px; margin-top: 10px; margin-bottom: 0;">Image from August 2026</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Opis tekstowy stacji pod spodem -->
+        <section style="color: #ddd; line-height: 1.6; margin-top: 30px;">
+          <p>This network was first seen logged on 1330z 1/10/2022, even though some suspect that it has been seen earlier... It first had around 6 frequencies. All of the frequencies, or most, had 50hz hum. There were a ton of frequencies popping out each day, but they were not so important. In around April 2023, the frequencies were set to 6828, 7032, 7546, 7649, 8514, 9310. At the end of 2023, 6828, 7546, 7649, and 9310 moved to the Southern Musical Network site location. On 1st March 2024, there was a 6911 tx noise. On 2nd March 2024, the network began running.  </p>
+          <p>6911 was the only one with a constant "marker" while other stations contained hum or tx noise. This network had its own 3 CIS-12 frequencies (listed at the bottom of the description). This network always gave out only the Russian ЛЮБЕ Anthem at 0600z, 1300z, and 1800z every day. It also had siren traffic and an alarm. Back in 2025 on 6911 there was a <a href="https://youtu.be/8Hg29lhCKRM?t=160" target="_blank" style="color: #4ccae0; text-decoration: underline;">automatic robotic voice</a> twice. During May and June, there were problems with the AGC and the network overall. It turned off on 9th June 2025, moved sites, but came back on 23rd June 2025. The same thing happened multiple times during June, July, and August. At the time, the "<a href="images/7032-15-07-2025.png" target="_blank" style="color: #4ccae0; text-decoration: underline;">Three Tone</a>" signal was used on 6911 and similar frequencies. 6911 came back to this site for the last time on August 11th, 2025. Overall, this was happening more often than anyone thinks, but most of the activity wasn't logged. The network officially separated on 14th August 2025. After that date, the site was active, but the marker from 6911 was replaced with tx noise with faint cable interference and faint "Three Tone" signal. After it was replaced, one of the CIS-12 frequencies (4983) turned off and never came back.</p>
+          <p>After the shutdown, 7032 and 8514 were the only ones having any transmitter activity. 8514 had tx noise which was turning on and off sometimes, and 7032 was switching from the "Three Tones" to "Three Tone" with tx noise. After months of no traffic, on 1st April at around 0700z, 6911 turned faint, and previous frequencies belonging to this network were replaced and reorganized. Everything normalized and came back to the previous state on 2nd April 2026 when 6911 came back with a new unheard hum, and other frequencies leaked similar things. Later turned out that 6911 was connected to the site phone line... Everything has been leaked from Morse, FSKs to CISes. <a href="/radio-field/recordings/7otd_20260825_0655z_6911kHz.mp3" target="_blank" style="color: #4ccae0; text-decoration: underline;">Rarely was voice heard...</a> There were a few times when <a href="images/6911-rebirth-10-08-2026.png" target="_blank" style="color: #4ccae0; text-decoration: underline;"> 6911 turned off completely for around a minute or two</a>. Continue. </p>
+          <p>All of the musical frequencies used from 6911 Moscow Site after 2nd March 2024:</p>
+          <p>6911, 7032, 8514</p>
+          <p>All of the CIS-12 frequencies used from 6911 Moscow Site after 2nd March 2024:</p>
+          <p>4983, 7667, 8568 (Mains) | More to come here soon. </p>
+          <ul style="padding-left: 20px;">
+            <li>In 2023: Birth of the first musical network.</li>
+            <li>In 2024: 6911 birth</li>
+            <li>From 2025: Great era, changed sites, tx noise.</li>
+            <li>From 2026: New era, and death.</li>
+          </ul>
+          <p style="margin-top: 10px;">One of the weirdest sites yet...</p>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>© <span id="year"></span> Radio Field</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@thebuzzerchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://discord.gg/tGHZVwdXYw" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon discord">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="search.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    async function loadNavigation() {
+      try {
+        const response = await fetch('pagesincontainer.json');
+        if (!response.ok) throw new Error('Ошибка загрузки навигации');
+        const links = await response.json();
+
+        const nav = document.getElementById('dynamic-nav');
+        nav.innerHTML = links.map(link =>
+          `<a href="${link.url}">${link.title}</a>`
+        ).join(' | ');
+
+      } catch (error) {
+        console.error('Ошибка загрузки меню:', error.message);
+        document.getElementById('dynamic-nav').textContent = 'Ошибка загрузки меню';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadNavigation();
+      if (typeof loadNews === 'function') loadNews();
+    });
+  </script>
+</body>
+</html>
