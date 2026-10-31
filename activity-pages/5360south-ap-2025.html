@@ -1,185 +1,233 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>2026 Logs › Radio Field</title>
-<link rel="icon" type="image/png" href="/SiteIcon.png" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-<link rel="stylesheet" href="/styles.css" />
-<style>
-  .log-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #161616;
-    color: #ddd;
-    font-size: 14px;
-    margin-top: 15px;
-  }
-  .log-table th, .log-table td {
-    border: 1px solid #333;
-    padding: 10px 12px;
-    vertical-align: top;
-  }
-  .log-table th {
-    background-color: #1f1f1f;
-    color: #fff;
-    font-weight: bold;
-  }
-  .log-table tr:hover {
-    background-color: #1c1c1c;
-  }
-  .log-thanks {
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 20px;
-    font-style: italic;
-  }
-</style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo-title">
-        <a href="/" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-          <img src="/SiteIcon.png" alt="Logo" />
-          <h1>Radio Field</h1>
-        </a>
-      </div>
-      <nav id="dynamic-nav"></nav>
-      <div id="search-container">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Search the site..."
-          autocomplete="off"
-        />
-        <div id="suggestions"></div>
-      </div>
-    </header>
-  </div>
-
-  <div class="radio-table-container" style="margin-top: 20px; padding: 0 15px;">
-    <!-- Okruski nawigacji (Breadcrumbs) -->
-    <nav style="margin-bottom: 20px;">
-      <ol class="breadcrumb" style="background: transparent; padding-left: 0; list-style: none; display: flex; gap: 5px; color: #aaa;">
-        <li><a href="/" style="color: #4ccae0; text-decoration: none;">Radio Field</a></li>
-        <li>/</li>
-        <li><a href="/military-stations" style="color: #4ccae0; text-decoration: none;">Military Stations</a></li>
-        <li>/</li>
-        <li><a href="/military-stations/russia" style="color: #4ccae0; text-decoration: none;">Russia</a></li>
-        <li>/</li>
-        <li><a href="/military-stations/russia/fgkt" style="color: #4ccae0; text-decoration: none;">FGKT</a></li>
-        <li>/</li>
-        <li style="color: #fff;">2026</li>
-      </ol>
-    </nav>
-
-    <main>
-      <article>
-        <!-- Wyrównane do lewej zamiast domyślnego wyśrodkowania w milstat-section -->
-        <section style="text-align: left; margin-bottom: 10px;">
-          <h2 style="color: #2ecc71; margin: 0; font-size: 26px; font-weight: bold;">2026</h2>
-        </section>
-
-        <!-- Podziękowania za logi -->
-        <div class="log-thanks">
-          Huge thanks for logs to: SwRR, Neptunefshcat, 2460, The Buzzer Channel, itz.kkursantov, taNIKRIO, girlychu, michaelnxldstan, SW, null
-        </div>
-
-        <!-- Tabela aktywności / rejestr logów -->
-        <div style="overflow-x: auto;">
-          <table class="log-table">
-            <thead>
-              <tr>
-                <th style="width: 15%;">Date / Time (UTC)</th>
-                <th style="width: 12%;">Frequency and Modulation</th>
-                <th style="width: 12%;">Callsign(s)</th>
-                <th style="width: 61%;">Key Group / Latin transcript / Cyrillic transcript / Comments</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>25.10.2026 17:45</td>
-                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
-                <td>FGKT / ФГКТ</td>
-                <td>
-                  <div style="margin-bottom: 5px;"><strong>90075</strong> ZAMYeNYaYuShchIJ 7012 9775</div>
-                  <div style="color: #aaa; margin-bottom: 5px;">ЗАМЕНЯЮЩИЙ 7012 9775</div>
-                  <div style="font-size: 12px; color: #7cc576;">Caught by SwRR.</div>
-                </td>
-              </tr>
-              <tr>
-                <td>24.10.2026 17:45</td>
-                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
-                <td>FGKT / ФГКТ</td>
-                <td>
-                  <div style="margin-bottom: 5px;"><strong>86356</strong> LUCHOSKOT 6472 6079</div>
-                  <div style="color: #aaa; margin-bottom: 5px;">ЛУЧОСКОТ 6472 6079</div>
-                </td>
-              </tr>
-              <tr>
-                <td>21.10.2026 17:45</td>
-                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
-                <td>FGKT / ФГКТ</td>
-                <td>
-                  <div style="color: #888; font-style: italic;">Either no transmission or skipped.</div>
-                </td>
-              </tr>
-              <tr>
-                <td>19.10.2026 17:45</td>
-                <td>6970 kHz<br><span style="color: #888; font-size: 12px;">J3E (USB)</span></td>
-                <td>FGKT / ФГКТ</td>
-                <td>
-                  <div style="color: #888; font-style: italic;">No message was transmitted.</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-      </article>
-    </main>
-  </div>
-
-  <footer>
-    <div class="footer-content">
-      <p>© <span id="year"></span> Radio Field</p>
-      <div class="social-links">
-        <a href="https://www.youtube.com/@thebuzzerchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon youtube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://discord.gg/tGHZVwdXYw" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon discord">
-          <i class="fab fa-discord"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/search.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    async function loadNavigation() {
-      try {
-        const response = await fetch('/pagesincontainer.json');
-        if (!response.ok) throw new Error('Ошибка загрузки навигации');
-        const links = await response.json();
-
-        const nav = document.getElementById('dynamic-nav');
-        nav.innerHTML = links.map(link =>
-          `<a href="${link.url}">${link.title}</a>`
-        ).join(' | ');
-
-      } catch (error) {
-        console.error('Ошибка загрузки меню:', error.message);
-        document.getElementById('dynamic-nav').textContent = 'Ошибка загрузки меню';
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 Activity Log - Radio Field</title>
+  <style>
+    /* Ogólne style strony Radio Field */
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
     }
 
-    window.addEventListener('DOMContentLoaded', () => {
-      loadNavigation();
-      if (typeof loadNews === 'function') loadNews();
-    });
-  </script>
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Ścieżka nawigacji (Breadcrumbs) */
+    .breadcrumbs {
+      font-size: 0.85rem;
+      color: #00e676;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumbs a {
+      color: #00e676;
+      text-decoration: none;
+    }
+
+    .breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #00e676;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .meta-info {
+      font-size: 0.85rem;
+      color: #a0a0a0;
+      margin-bottom: 12px;
+    }
+
+    .credits {
+      font-size: 0.85rem;
+      color: #888888;
+      margin-bottom: 20px;
+    }
+
+    /* Tabela logów bazowana na Priyom.org */
+    .log-table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table.log-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      text-align: left;
+      background-color: #141414;
+      border: 1px solid #333333;
+    }
+
+    table.log-table th, 
+    table.log-table td {
+      border: 1px solid #333333;
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+
+    /* Nagłówek opisowy tabeli */
+    .table-header-desc {
+      background-color: #1e1e1e;
+      color: #888888;
+      font-size: 0.8rem;
+      border-bottom: 2px solid #333333;
+    }
+
+    /* Styl poszczególnych komórek */
+    .date-cell {
+      white-space: nowrap;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .freq-cell {
+      color: #00e676;
+      font-family: monospace;
+      font-size: 0.9rem;
+    }
+
+    .freq-cell span {
+      display: block;
+      color: #a0a0a0;
+      font-size: 0.75rem;
+    }
+
+    .cyrillic {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    /* Efekt najechania na wiersz */
+    table.log-table tbody tr:hover {
+      background-color: #1f2822;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <a href="#">Radio Field</a> / <a href="#">Military Stations</a> / <a href="#">Russia</a> / <a href="#">FGKT</a> / 2026
+    </div>
+
+    <h1>2026</h1>
+    <div class="meta-info">
+      Date / Time (UTC) / Frequency and Modulation / Callsign(s) / Key Group / Latin transcript / Cyrillic transcript / Comments
+    </div>
+    <div class="credits">
+      Huge thanks for logs to: SwRR, Neptune-fishcat 7460, The Buzzer Channel, ltz.kursantovv, IaNK.RKI, girlychu, michaelmxDstan, SW.null
+    </div>
+
+    <!-- Tabela aktywności -->
+    <div class="log-table-container">
+      <table class="log-table">
+        <tbody>
+
+          <tr>
+            <td class="date-cell">30.10.2026</td>
+            <td>17:45</td>
+            <td class="freq-cell">
+              6970 kHz
+              <span>J3E (USB)</span>
+            </td>
+            <td>FGKT / ФГКТ</td>
+            <td>05886</td>
+            <td>PAUKOZHID 6471 9398</td>
+            <td class="cyrillic">ПАУКОЖИД 6471 9398</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="date-cell">29.10.2026</td>
+            <td>17:45</td>
+            <td class="freq-cell">
+              6970 kHz
+              <span>J3E (USB)</span>
+            </td>
+            <td>FGKT / ФГКТ</td>
+            <td>01393</td>
+            <td>STROGIY 6856 8098</td>
+            <td class="cyrillic">СТРОГИЙ 6856 8098</td>
+            <td>Caught by IaNK.RKI.</td>
+          </tr>
+
+          <tr>
+            <td class="date-cell">26.10.2026</td>
+            <td>17:45</td>
+            <td class="freq-cell">
+              6970 kHz
+              <span>J3E (USB)</span>
+            </td>
+            <td>FGKT / ФГКТ</td>
+            <td>13399</td>
+            <td>SKOTOROM 8010 2739</td>
+            <td class="cyrillic">СКОТОРОМ 8010 2739</td>
+            <td>Caught by The Buzzer Channel.</td>
+          </tr>
+
+          <tr>
+            <td class="date-cell">25.10.2026</td>
+            <td>17:45</td>
+            <td class="freq-cell">
+              6970 kHz
+              <span>J3E (USB)</span>
+            </td>
+            <td>FGKT / ФГКТ</td>
+            <td>90075</td>
+            <td>ZAMYENYsYuShChI 7012 9775</td>
+            <td class="cyrillic">ЗАМЕНЯЮЩИЙ 7012 9775</td>
+            <td>Caught by SwRR.</td>
+          </tr>
+
+          <tr>
+            <td class="date-cell">24.10.2026</td>
+            <td>17:45</td>
+            <td class="freq-cell">
+              6970 kHz
+              <span>J3E (USB)</span>
+            </td>
+            <td>FGKT / ФГКТ</td>
+            <td>86356</td>
+            <td>LUChOSKOT 6472 6079</td>
+            <td class="cyrillic">ЛУЧОСКОТ 6472 6079</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="date-cell">23.10.2026</td>
+            <td>17:45</td>
+            <td class="freq-cell">
+              6970 kHz
+              <span>J3E (USB)</span>
+            </td>
+            <td>FGKT / ФГКТ</td>
+            <td>63704</td>
+            <td>STIHOGLAZ 8425 2591</td>
+            <td class="cyrillic">СТИХОГЛАЗ 8425 2591</td>
+            <td>Caught by IaNK.RKI.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
 </body>
 </html>
