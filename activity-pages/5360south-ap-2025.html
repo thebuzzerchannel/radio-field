@@ -3,66 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 Activity Log - Radio Field</title>
+  <title>5360 South Musical Network 2026 Activity Log - Radio Field</title>
+  <!-- Podlinkowanie głównego pliku stylów Radio Field -->
+  <link rel="stylesheet" href="../styles.css">
+  
   <style>
-    /* Ogólne style strony Radio Field */
-    body {
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      background-color: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 8px;
-      padding: 24px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Ścieżka nawigacji (Breadcrumbs) */
-    .breadcrumbs {
+    /* Dedykowane style tabeli logów (styl Priyom) dopasowane do motywu Radio Field */
+    .log-header-info {
       font-size: 0.85rem;
-      color: #00e676;
-      margin-bottom: 20px;
-    }
-
-    .breadcrumbs a {
-      color: #00e676;
-      text-decoration: none;
-    }
-
-    .breadcrumbs a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      color: #00e676;
-      font-size: 2rem;
-      margin-top: 0;
+      color: #a0a0a0;
       margin-bottom: 8px;
     }
 
-    .meta-info {
-      font-size: 0.85rem;
-      color: #a0a0a0;
-      margin-bottom: 12px;
-    }
-
-    .credits {
+    .log-credits {
       font-size: 0.85rem;
       color: #888888;
       margin-bottom: 20px;
     }
 
-    /* Tabela logów bazowana na Priyom.org */
-    .log-table-container {
+    .log-table-wrapper {
       width: 100%;
       overflow-x: auto;
+      margin-top: 15px;
     }
 
     table.log-table {
@@ -71,38 +33,29 @@
       font-size: 0.85rem;
       text-align: left;
       background-color: #141414;
-      border: 1px solid #333333;
+      border: 1px solid #2a2a2a;
     }
 
     table.log-table th, 
     table.log-table td {
-      border: 1px solid #333333;
+      border: 1px solid #2a2a2a;
       padding: 8px 10px;
       vertical-align: top;
     }
 
-    /* Nagłówek opisowy tabeli */
-    .table-header-desc {
-      background-color: #1e1e1e;
-      color: #888888;
-      font-size: 0.8rem;
-      border-bottom: 2px solid #333333;
-    }
-
-    /* Styl poszczególnych komórek */
-    .date-cell {
+    .log-date {
       white-space: nowrap;
       font-weight: bold;
       color: #ffffff;
     }
 
-    .freq-cell {
+    .log-freq {
       color: #00e676;
       font-family: monospace;
       font-size: 0.9rem;
     }
 
-    .freq-cell span {
+    .log-freq span {
       display: block;
       color: #a0a0a0;
       font-size: 0.75rem;
@@ -112,37 +65,44 @@
       font-family: "Courier New", Courier, monospace;
     }
 
-    /* Efekt najechania na wiersz */
     table.log-table tbody tr:hover {
-      background-color: #1f2822;
+      background-color: #1c2820;
     }
   </style>
 </head>
 <body>
 
+  <!-- Główny kontener Radio Field -->
   <div class="container">
+    
     <!-- Breadcrumbs -->
     <div class="breadcrumbs">
-      <a href="#">Radio Field</a> / <a href="#">Military Stations</a> / <a href="#">Russia</a> / <a href="#">FGKT</a> / 2026
+      <a href="../index.html">Radio Field</a> / 
+      <a href="../military-stations.html">Military Stations</a> / 
+      <a href="../russia.html">Russia</a> / 
+      <a href="5360south.html">5360 South Musical Network</a> / 
+      2026
     </div>
 
     <h1>2026</h1>
-    <div class="meta-info">
+    
+    <div class="log-header-info">
       Date / Time (UTC) / Frequency and Modulation / Callsign(s) / Key Group / Latin transcript / Cyrillic transcript / Comments
     </div>
-    <div class="credits">
+    
+    <div class="log-credits">
       Huge thanks for logs to: SwRR, Neptune-fishcat 7460, The Buzzer Channel, ltz.kursantovv, IaNK.RKI, girlychu, michaelmxDstan, SW.null
     </div>
 
-    <!-- Tabela aktywności -->
-    <div class="log-table-container">
+    <!-- Tabela z logami stacji -->
+    <div class="log-table-wrapper">
       <table class="log-table">
         <tbody>
 
           <tr>
-            <td class="date-cell">30.10.2026</td>
+            <td class="log-date">30.10.2026</td>
             <td>17:45</td>
-            <td class="freq-cell">
+            <td class="log-freq">
               6970 kHz
               <span>J3E (USB)</span>
             </td>
@@ -154,9 +114,9 @@
           </tr>
 
           <tr>
-            <td class="date-cell">29.10.2026</td>
+            <td class="log-date">29.10.2026</td>
             <td>17:45</td>
-            <td class="freq-cell">
+            <td class="log-freq">
               6970 kHz
               <span>J3E (USB)</span>
             </td>
@@ -168,9 +128,9 @@
           </tr>
 
           <tr>
-            <td class="date-cell">26.10.2026</td>
+            <td class="log-date">26.10.2026</td>
             <td>17:45</td>
-            <td class="freq-cell">
+            <td class="log-freq">
               6970 kHz
               <span>J3E (USB)</span>
             </td>
@@ -182,9 +142,9 @@
           </tr>
 
           <tr>
-            <td class="date-cell">25.10.2026</td>
+            <td class="log-date">25.10.2026</td>
             <td>17:45</td>
-            <td class="freq-cell">
+            <td class="log-freq">
               6970 kHz
               <span>J3E (USB)</span>
             </td>
@@ -196,9 +156,9 @@
           </tr>
 
           <tr>
-            <td class="date-cell">24.10.2026</td>
+            <td class="log-date">24.10.2026</td>
             <td>17:45</td>
-            <td class="freq-cell">
+            <td class="log-freq">
               6970 kHz
               <span>J3E (USB)</span>
             </td>
@@ -210,9 +170,9 @@
           </tr>
 
           <tr>
-            <td class="date-cell">23.10.2026</td>
+            <td class="log-date">23.10.2026</td>
             <td>17:45</td>
-            <td class="freq-cell">
+            <td class="log-freq">
               6970 kHz
               <span>J3E (USB)</span>
             </td>
